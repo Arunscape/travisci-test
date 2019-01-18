@@ -1,0 +1,27 @@
+language: node_js
+
+node_js:
+  - "node"
+
+services:
+  - docker
+
+before_install:
+  - echo noop
+
+install:
+        yarn
+
+script:
+  - yarn test
+  - yarn build
+#  - docker build -t 
+
+deploy:
+  provider: script
+  script:
+#    docker push
+    echo noop
+  on:
+    branch: master
+
