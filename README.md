@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/arunscape/travisci-test.svg?branch=master)](https://travis-ci.org/arunscape/travisci-test)
+[![Build Status](https://travis-ci.org/Arunscape/travisci-test.svg?branch=master)](https://travis-ci.org/Arunscape/travisci-test)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
