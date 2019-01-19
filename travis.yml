@@ -24,13 +24,6 @@ jobs:
       script: yarn lint
     - stage: test 
       script: yarn test
-    - stage: build docker image and push to dockerhub
-      script: 
-      - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-      - docker build -t travisci-test .
-      - docker images
-      - docker tag travisci-test $DOCKER_USERNAME/travisci-test
-      - docker push $DOCKER_USERNAME/travisci-test
       deploy:
         provider: script
         script: ./deploy.sh
